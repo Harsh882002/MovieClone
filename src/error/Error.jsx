@@ -15,6 +15,7 @@ export const Error = () => {
 
                 </figure>
                 <p className="font-bold"> The page you were looking for could not be found </p>
+                <p>Plese</p>
 <br />
 <button className="bg-red-700 rounded text-white w-19"><NavLink to="/"> GO TO HOMEPAGE </NavLink></button>
             </div>

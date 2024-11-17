@@ -2,9 +2,20 @@ export const Footer = () =>{
 
     return(
         <>
-        <div className="fixed  flex items-center justify-center bottom-0 w-full h-1/4 bg-black text-white  ">
-        <h1 className="">I am from Footer and you </h1>
-        </div>
+       <div>
+        <ul>
+            <li>FAQ</li>
+            <li>Investor Relations</li>
+            <li>Privacy</li>
+            <li>Speed Test</li>
+            <li>Help Center</li>
+            <li>Jobs</li>
+            <li>Accounts</li>
+            <li>ways to watch</li>
+            <li>Term and Use</li>
+            <li>Contact us</li>
+        </ul>
+       </div>
         
         </>
     )

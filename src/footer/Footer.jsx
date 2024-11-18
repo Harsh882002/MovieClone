@@ -2,7 +2,7 @@ export const Footer = () => {
 
     return (
         <>
-            <div className="fixed bottom-3 bg-black w-full text-white flex items-center justify-center ">
+            <div className="fixed bottom-3 bg-black w-full text-white flex items-center justify-center text-sm">
                 <ul className="ml-15 mr-14">
                     
                     <li>FAQ</li>

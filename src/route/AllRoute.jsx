@@ -16,13 +16,7 @@ export const About =() =>{
     )
 }
 
-export const Movies =() =>{
-    return(
-        <>
-        <h1>I am MOVIE click on mee</h1>
-        </>
-    )
-}
+
 
 export const Contact = () =>{
     return(

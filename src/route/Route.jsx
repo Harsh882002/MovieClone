@@ -1,7 +1,9 @@
  import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Layout } from "../Layout/Layout"
-import { About, Contact, Home, Movies } from "./AllRoute"
+import { About, Contact, Home } from "./AllRoute"
 import { Error } from "../error/Error"
+import { getMoviesData } from "../api/GetApi"
+import { Movies } from "./Movies"
 
 export const Routerss = () => {
 
@@ -24,7 +26,9 @@ export const Routerss = () => {
                 
                     {
                         path:"/movies",
-                        element:<Movies />
+                        element:<Movies />,
+                        loader : getMoviesData,
+
                     },
 
                     {

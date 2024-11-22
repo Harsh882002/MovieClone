@@ -10,7 +10,7 @@ export const Header = () => {
             <ul className=" absolute top-0 right-16 text-sm flex space-x-3 p-0 font-bold  ">
                 <li><NavLink to='/'>Home</NavLink></li>  
                 <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="movies">Movies</NavLink></li>
+                <li><NavLink to="/movies">Movies</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
             </div>

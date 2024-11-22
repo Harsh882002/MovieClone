@@ -1,9 +1,10 @@
- import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Layout } from "../Layout/Layout"
 import { About, Contact, Home } from "./AllRoute"
 import { Error } from "../error/Error"
 import { getMoviesData } from "../api/GetApi"
 import { Movies } from "./Movies"
+import { MoviesData } from "../UI/MoviesData"
 
 export const Routerss = () => {
 
@@ -11,28 +12,36 @@ export const Routerss = () => {
         [
             {
                 path: "/",
-                element:<Layout />,
-                errorElement:<Error />,
-                children:[
+                element: <Layout />,
+                errorElement: <Error />,
+                children: [
                     {
-                        path:"/",
+                        path: "/",
                         element: <Home />
                     },
 
                     {
-                        path:"/about",
+                        path: "/about",
                         element: <About />
                     },
-                
+
                     {
-                        path:"/movies",
-                        element:<Movies />,
-                        loader : getMoviesData,
+                        path: "/movies",
+                        element: <Movies />,
+                        loader: getMoviesData,
 
                     },
 
                     {
-                        path:"/contact",
+                        path: "/movies/:movieId",
+                        element: <moviesData />,
+                        loader: getMovieDetails 
+
+
+                    },
+
+                    {
+                        path: "/contact",
                         element: <Contact />
                     }
                 ]
@@ -43,7 +52,7 @@ export const Routerss = () => {
 
     return (
         <>
-<RouterProvider router={router} />
+            <RouterProvider router={router} />
         </>
     )
 }
